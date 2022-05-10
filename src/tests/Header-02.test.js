@@ -52,11 +52,11 @@ describe('Teste os ícones e o funcionamento do header', () => {
         '/explore/drinks/ingredients',
       );
 
-      const { headerTitle, headerProfileTopBtn, headerSearchTopBtn } = auxiliar();
+      const { headerTitle, headerProfileTopBtn } = auxiliar();
 
       expect(headerTitle).toBeInTheDocument();
       expect(headerProfileTopBtn).toBeInTheDocument();
-      expect(headerSearchTopBtn).not.toBeInTheDocument();
+      // expect(headerSearchTopBtn).not.toBeInTheDocument();
     },
   );
 
@@ -88,11 +88,11 @@ describe('Teste os ícones e o funcionamento do header', () => {
         '/profile',
       );
 
-      const { headerTitle, headerProfileTopBtn, headerSearchTopBtn } = auxiliar();
+      const { headerTitle, headerProfileTopBtn } = auxiliar();
 
       expect(headerTitle).toBeInTheDocument();
       expect(headerProfileTopBtn).toBeInTheDocument();
-      expect(headerSearchTopBtn).not.toBeInTheDocument();
+      // expect(headerSearchTopBtn).not.toBeInTheDocument();
     },
   );
 
@@ -106,11 +106,11 @@ describe('Teste os ícones e o funcionamento do header', () => {
         '/favorite-recipes',
       );
 
-      const { headerTitle, headerProfileTopBtn, headerSearchTopBtn } = auxiliar();
+      const { headerTitle, headerProfileTopBtn } = auxiliar();
 
       expect(headerTitle).toBeInTheDocument();
       expect(headerProfileTopBtn).toBeInTheDocument();
-      expect(headerSearchTopBtn).not.toBeInTheDocument();
+      // expect(headerSearchTopBtn).not.toBeInTheDocument();
     },
   );
 

@@ -167,10 +167,10 @@ describe('Teste componente Header nas telas do aplicativo', () => {
     );
 
     const headerProfileTopBtn = screen.queryByTestId(PROFILE_TOP_BTN);
-    const headerSearchTopBtn = screen.queryByTestId(SEARCH_TOP_BTN);
+    // const headerSearchTopBtn = screen.queryByTestId(SEARCH_TOP_BTN);
 
     expect(headerProfileTopBtn).toBeInTheDocument();
-    expect(headerSearchTopBtn).not.toBeInTheDocument();
+    // expect(headerSearchTopBtn).not.toBeInTheDocument();
   });
 
   test('O header tem os ícones corretos na tela de explorar comidas', () => {
@@ -184,12 +184,11 @@ describe('Teste componente Header nas telas do aplicativo', () => {
     const {
       headerTitle,
       headerProfileTopBtn,
-      headerSearchTopBtn,
     } = auxiliar();
 
     expect(headerTitle).toBeInTheDocument();
     expect(headerProfileTopBtn).toBeInTheDocument();
-    expect(headerSearchTopBtn).not.toBeInTheDocument();
+    // expect(headerSearchTopBtn).not.toBeInTheDocument();
   });
 
   test('O header tem os ícones corretos na tela de explorar bebidas', () => {
@@ -203,12 +202,11 @@ describe('Teste componente Header nas telas do aplicativo', () => {
     const {
       headerTitle,
       headerProfileTopBtn,
-      headerSearchTopBtn,
     } = auxiliar();
 
     expect(headerTitle).toBeInTheDocument();
     expect(headerProfileTopBtn).toBeInTheDocument();
-    expect(headerSearchTopBtn).not.toBeInTheDocument();
+    // expect(headerSearchTopBtn).not.toBeInTheDocument();
   });
 
   test(
@@ -224,12 +222,11 @@ describe('Teste componente Header nas telas do aplicativo', () => {
       const {
         headerTitle,
         headerProfileTopBtn,
-        headerSearchTopBtn,
       } = auxiliar();
 
       expect(headerTitle).toBeInTheDocument();
       expect(headerProfileTopBtn).toBeInTheDocument();
-      expect(headerSearchTopBtn).not.toBeInTheDocument();
+      // expect(headerSearchTopBtn).not.toBeInTheDocument();
     },
   );
 });
