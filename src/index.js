@@ -6,6 +6,9 @@ import store from './Redux/store';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './fonts/marguerite.ttf';
+import './fonts/EqualSans_Demo.ttf';
+import './fonts/PilsenPlakat.ttf';
 
 ReactDOM.render(
   <BrowserRouter>

@@ -41,9 +41,11 @@
   color: black;
   font-family: Roboto , sans-serif;
   font-size: 18px;
-  font-style: normal;
+
+  /* font-style: normal; */
   font-weight: 400;
   height: auto;
+  letter-spacing: 1px;
   line-height: 21px;
   margin: 5px;
   width: 110px;

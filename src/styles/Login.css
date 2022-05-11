@@ -6,7 +6,9 @@ main {
 
 h1 {
   display: flex;
+  font-family: marguerite , sans-serif;
   justify-content: center;
+  letter-spacing: 0.7px;
   margin-bottom: 20px;
 }
 

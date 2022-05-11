@@ -42,12 +42,14 @@
   color: black;
   display: flex;
   flex-flow: row wrap;
-  font-family: Roboto , sans-serif;
-  font-size: 30px;
+  font-family: Equal Sans , sans-serif;
+  font-size: 40px;
   font-style: normal;
   font-weight: 400;
   height: auto;
+  letter-spacing: 1.5px;
   line-height: 35px;
+  margin-top: 10px;
   max-width: 70%;
   position: relative;
   text-align: center;

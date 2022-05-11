@@ -2,16 +2,27 @@
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
+  font-family: Equal Sans , sans-serif;
+
+  /* font-size: 23px; */
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  line-height: 45px;
   margin-top: 30%;
 }
 
 .container-profile p {
-  font-size: 20px;
+  font-size: 35px;
   margin-bottom: 60px;
 }
 
 .container-profile button {
-  height: 42px;
+  border: none;
+  font-size: 30px;
+  height: auto;
+  letter-spacing: 0.7px;
+  line-height: 50px;
   margin: 8px;
   width: 80%;
 }
