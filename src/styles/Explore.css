@@ -14,8 +14,13 @@
   /* border: 10px solid green; */
   display: flex;
   flex-flow: row wrap;
+  font-family: Equal Sans , sans-serif;
+  font-size: 30px;
+  font-weight: 400;
   height: 200px;
   justify-content: space-around;
+  letter-spacing: 2px;
+  line-height: 45px;
   margin: auto;
   margin-top: 150px;
   position: relative;

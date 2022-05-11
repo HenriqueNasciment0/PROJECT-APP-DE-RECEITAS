@@ -11,7 +11,11 @@
   background: white;
   border: 1px solid black;
   box-sizing: border-box;
+  font-family: Equal Sans , sans-serif;
+  font-size: 25px;
+  font-weight: 200;
   height: auto;
+  letter-spacing: 0.7px;
   margin: 10px;
   padding: 10px;
   width: 95%;
@@ -33,7 +37,11 @@
   /* border: 1px solid orange; */
   display: flex;
   flex-flow: row nowrap;
+  font-family: Equal Sans , sans-serif;
+  font-size: 25px;
+  font-weight: 200;
   justify-content: space-around;
+  letter-spacing: 0.8px;
   margin: auto;
   padding: 5px;
 
@@ -51,10 +59,14 @@
 
 .search-button {
   background-color: #c4c4c4;
+  border: none;
 
   /* border: 1px solid orange; */
-  border: none;
   color: black;
+  font-family: Equal Sans , sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
   margin: auto;
   width: 150px;
 }

@@ -11,7 +11,7 @@ function Explore() {
       <Header
         text="Explore"
       />
-      <h1 data-testid="page-title">Explore</h1>
+      {/* <h1 data-testid="page-title">Explore</h1> */}
       <div className="div-explore">
         <button
           className="explore"
