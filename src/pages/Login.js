@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import '../styles/Login.css';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 function Login() {
   const [user, setUser] = useState({ password: '', email: '' });
@@ -33,7 +35,45 @@ function Login() {
   return (
     <main>
       <h1>Login</h1>
-      <label htmlFor="email">
+
+      <Form>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Control
+            type="email"
+            placeholder="Email"
+            id="email"
+            name="email"
+            value={ user.email }
+            onChange={ handleChange }
+            data-testid="email-input"
+          />
+
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Control
+            type="password"
+            placeholder="Password"
+            id="password"
+            name="password"
+            value={ user.password }
+            onChange={ handleChange }
+            data-testid="password-input"
+          />
+        </Form.Group>
+
+        <Button
+          variant="primary"
+          type="submit"
+          data-testid="login-submit-btn"
+          disabled={ disable }
+          onClick={ handleClick }
+        >
+          Enter
+        </Button>
+      </Form>
+
+      {/* <label htmlFor="email">
         <input
           id="email"
           type="email"
@@ -62,7 +102,7 @@ function Login() {
         onClick={ handleClick }
       >
         Enter
-      </button>
+      </button> */}
     </main>
   );
 }

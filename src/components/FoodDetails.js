@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import copy from 'clipboard-copy';
 import CardRecommendedRecipe from './CardRecommendedRecipe';
-import { verifyIsDoneRecipe, verifyIsInProgressRecipe,
+import { verifyIsDoneRecipe,
   favoriteFood } from '../helps/localStore';
 import { getFoodById } from '../services';
 import blackHeartIcon from '../images/blackHeartIcon.svg';
@@ -16,7 +16,7 @@ function FoodDetails() {
   const [ingredients, setIngredients] = useState([]);
   const [measures, setMeasures] = useState([]);
   const [isDoneRecipe, setDoneRecipe] = useState(false);
-  const [isContinue, setIsContinue] = useState(false);
+  const [isContinue] = useState(false);
   const [favorite, setFavorite] = useState(false);
   const [isCopy, setCopy] = useState(false);
 
@@ -27,7 +27,8 @@ function FoodDetails() {
     };
     fetchApiById();
     setDoneRecipe(verifyIsDoneRecipe(ID));
-    setIsContinue(verifyIsInProgressRecipe(ID, 'meals'));
+    // setIsContinue(verifyIsInProgressRecipe(ID, 'meals')); -> comentado por enquanto, estava quebrando o código.
+    // bem como removido set do estado e função do localstorge.
     const saveDrink = JSON.parse(localStorage.getItem('favoriteRecipes'));
     const isFavorite = saveDrink?.some((recipe) => recipe.id === ID);
     setFavorite(isFavorite);

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import copy from 'clipboard-copy';
 import { getDrinkById } from '../services';
-import { verifyIsDoneRecipe, verifyIsInProgressRecipe,
+import { verifyIsDoneRecipe,
   favoriteDrink } from '../helps/localStore';
 import CardRecommendedDrinks from './CardRecommendedDrinks';
 import blackHeartIcon from '../images/blackHeartIcon.svg';
@@ -16,7 +16,7 @@ function DrinkDetails() {
   const [ingredients, setIngredients] = useState([]);
   const [measures, setMeasures] = useState([]);
   const [isDoneRecipe, setIsDoneRecipe] = useState(false);
-  const [isContinue, setIsContinue] = useState(false);
+  const [isContinue] = useState(false);
   const [isCopy, setCopy] = useState(false);
   const [favorite, setFavorite] = useState(false);
 
@@ -27,7 +27,7 @@ function DrinkDetails() {
     };
     fetchApiById();
     setIsDoneRecipe(verifyIsDoneRecipe(ID));
-    setIsContinue(verifyIsInProgressRecipe(ID, 'cocktails'));
+    // setIsContinue(verifyIsInProgressRecipe(ID, 'cocktails'));
     const saveDrink = JSON.parse(localStorage.getItem('favoriteRecipes'));
     const isFavorite = saveDrink?.some((recipe) => recipe.id === ID);
     setFavorite(isFavorite);

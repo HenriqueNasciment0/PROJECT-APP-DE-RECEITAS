@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory, useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import copy from 'clipboard-copy';
 import { favoriteFood } from '../helps/localStore';
 import { getFoodById } from '../services';
@@ -9,20 +9,19 @@ import '../styles/CardDetails.css';
 import '../styles/ProgressFood.css';
 
 function ProgressFood() {
-  const { location: pathname } = useHistory();
   const { id: ID } = useParams();
   const [foodDetails, setFoodDetails] = useState([]);
   const [ingredients, setIngredients] = useState([]);
   const [measures, setMeasures] = useState([]);
   const [favorite, setFavorite] = useState(false);
   const [isCopy, setCopy] = useState(false);
-  const [isPressed, setIsPressed] = useState([ingredients]);
-  let id = pathname.pathname;
+  const [isPressed, setIsPressed] = useState([]);
+  const [isDisabled, setIsDisabled] = useState(true);
+  const history = useHistory();
 
   useEffect(() => {
     const fetchApiById = async () => {
-      id = id.replace(/[^0-9]/g, '');
-      const res = await getFoodById(id);
+      const res = await getFoodById(ID);
       setFoodDetails(res[0]);
     };
     fetchApiById();
@@ -43,23 +42,22 @@ function ProgressFood() {
     setMeasures(measure);
   }, [foodDetails]);
 
-  const handleClick = (e) => {
-    if (isPressed) {
-      setIsPressed(e.target.checked);
-    } else {
-      setIsPressed(false);
+  const handleClick = ({ target }) => {
+    const ingredientFilter = ingredients.filter((i) => i === target.name && i !== '');
+    setIsPressed([...isPressed, ...ingredientFilter]);
+    if (isPressed.includes(target.name)) {
+      setIsPressed(isPressed.filter((e) => e !== target.name));
     }
-    console.log(isPressed);
-  };
+    const justIngredients = ingredients.filter((element) => element !== '');
 
-  const changeClass = () => {
-    let btnClass = 'btn';
-    if (isPressed) {
-      btnClass += ' btn-pressed';
+    if (isPressed.length === justIngredients.length - 1) { // verificação do botão
+      setIsDisabled(false);
     } else {
-      btnClass += ' btn-over';
+      setIsDisabled(true);
     }
-    return btnClass;
+
+    verifyIsInProgressRecipe(ID, 'foods'); // localStorage
+    JSON.parse(localStorage.getItem('verifyIsProgressRecipe'));
   };
 
   const handleFavorite = () => {
@@ -142,12 +140,12 @@ function ProgressFood() {
               <div key={ index }>
                 <label
                   htmlFor={ ingredient }
-                  className={ changeClass() }
+                  className={ isPressed.includes(ingredient) ? 'btn-pressed' : '' } // inclui a classe
                   data-testid={ `${index}-ingredient-step` }
                 >
                   <input
                     onChange={ handleClick }
-                    checked={ isPressed }
+                    checked={ isPressed.includes(ingredient) }
                     id={ ingredient }
                     type="checkbox"
                     key={ index }
@@ -173,6 +171,8 @@ function ProgressFood() {
           data-testid="finish-recipe-btn"
           className="start-recipe-btn"
           type="button"
+          disabled={ isDisabled }
+          onClick={ () => history.replace('/done-recipes') }
         >
           Finish Recipe
         </button>
