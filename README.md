@@ -22,6 +22,21 @@ Esse projeto em grupo, envolveu que fosse aplicado todo o conhecimento que apren
 
   
  ##
+ 
+ Projeto foi desenvolvido em grupo, utilizamos a extensão Live Share (https://visualstudio.microsoft.com/pt-br/services/live-share/) para desenvolver uma boa parte.
+ Nos dividimos por páginas da aplicação. Houve comunicação e colaboração ao desenvolvermos juntos os requisitos do projeto. Fizemos reuniões diárias pelo Zoom 
+ para sempre mantermos uma boa noção do andamento do projeto e para auxiliar caso algum colega estivesse com dificuldade em algum requisito. Usamos o Trello com 
+ ferramenta Kanban. Utilizamos o Slack para comunicação assíncrona.
+ 
+ Para gerenciamento dos estados da aplicação, preferimos utilizar Redux juntamente com os Hooks do React.js, assim conseguimos reforçar o conhecimento que adquirimos 
+ ao longo do curso nessas duas ferramentas.
+ 
+ Também pude aplicar as soft skills que exercitamos ao longo do curso. Tivemos que lidar com alguns problemas referentes ao Live Share que nos atrasaram um pouco, mas
+ com ___paciência, aplicando um escutativa ativa, empatia, comunicação e colaboração,___ conseguimos lidar com os desafios que tivemos.
+ 
+ ___Para mim, foi o projeto onde pude me cobrar mais, aprender mais, principalmente por simular um ambiente de trabalho, com pessoas diferentes, backgrounds diferentes,
+ porém juntos em desenvolver esse projeto! Foi muito empolgante e serviu para validar nossos conhecimentos.___
+ 
   
   <div> 
   <a href = "mailto:hsncorretor@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
