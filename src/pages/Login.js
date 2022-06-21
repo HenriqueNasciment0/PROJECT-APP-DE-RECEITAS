@@ -33,77 +33,49 @@ function Login() {
   };
 
   return (
-    <main>
-      <h1>Login</h1>
+    <section>
+      <main>
+        <h1>Login</h1>
 
-      <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Control
-            type="email"
-            placeholder="Email"
-            id="email"
-            name="email"
-            value={ user.email }
-            onChange={ handleChange }
-            data-testid="email-input"
-          />
+        <Form>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Control
+              type="email"
+              placeholder="Email"
+              id="email"
+              name="email"
+              value={ user.email }
+              onChange={ handleChange }
+              data-testid="email-input"
+            />
 
-        </Form.Group>
+          </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Control
-            type="password"
-            placeholder="Password"
-            id="password"
-            name="password"
-            value={ user.password }
-            onChange={ handleChange }
-            data-testid="password-input"
-          />
-        </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Control
+              type="password"
+              placeholder="Password"
+              id="password"
+              name="password"
+              value={ user.password }
+              onChange={ handleChange }
+              data-testid="password-input"
+            />
+          </Form.Group>
 
-        <Button
-          variant="primary"
-          type="submit"
-          data-testid="login-submit-btn"
-          disabled={ disable }
-          onClick={ handleClick }
-        >
-          Enter
-        </Button>
-      </Form>
+          <Button
+            variant="primary"
+            type="submit"
+            data-testid="login-submit-btn"
+            disabled={ disable }
+            onClick={ handleClick }
+          >
+            Enter
+          </Button>
+        </Form>
 
-      {/* <label htmlFor="email">
-        <input
-          id="email"
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={ user.email }
-          onChange={ handleChange }
-          data-testid="email-input"
-        />
-      </label>
-      <label htmlFor="password">
-        <input
-          id="password"
-          type="password"
-          name="password"
-          placeholder="Senha"
-          value={ user.password }
-          onChange={ handleChange }
-          data-testid="password-input"
-        />
-      </label>
-      <button
-        type="button"
-        data-testid="login-submit-btn"
-        disabled={ disable }
-        onClick={ handleClick }
-      >
-        Enter
-      </button> */}
-    </main>
+      </main>
+    </section>
   );
 }
 
