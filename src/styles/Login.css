@@ -13,8 +13,9 @@ background-size: cover;
 
 main {
   display: flex;
+  position: relative;
   flex-flow: column nowrap;
-  margin: 50% 10% 0;
+  margin: 60% 10% 0;
 }
 
 h1 {
