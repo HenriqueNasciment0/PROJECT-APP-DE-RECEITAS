@@ -65,7 +65,8 @@ main {
   display: flex;
   position: relative;
   flex-flow: column nowrap;
-  margin: 35% 10% 0;
+  height: 100px;
+  margin: 45% 10% 0;
 }
 
 h1 {
