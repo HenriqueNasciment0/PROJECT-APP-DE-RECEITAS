@@ -3,9 +3,9 @@
 
 Esse projeto em grupo, envolveu que fosse aplicado todo o conhecimento que aprendemos até esse momento do curso.
 
-<img src="./src/images/app-horizontal.gif"/>
+<img align="center" src="./src/images/app-horizontal.gif"/>
 
-#### Ferramentas utilizadas:
+### Ferramentas utilizadas:
 
 <div style="display: inline_block"><br>
   React.js
@@ -39,6 +39,10 @@ Esse projeto em grupo, envolveu que fosse aplicado todo o conhecimento que apren
  ___Para mim, foi o projeto onde pude me cobrar mais, aprender mais, principalmente por simular um ambiente de trabalho, com pessoas diferentes, backgrounds diferentes,
  porém juntos em desenvolver esse projeto! Foi muito empolgante e serviu para validar nossos conhecimentos.___
  
+ ## Link do deploy da aplicação 
+ ___https://appdereceitas18.netlify.app/___
+ 
+ Aplicação feita pensando em tamanho de tela de smartphones, porém pode ser visualizado tranquilamente em desktop.
   
   <div> 
   <a href = "mailto:hsncorretor@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
