@@ -3,6 +3,8 @@
 
 Esse projeto em grupo, envolveu que fosse aplicado todo o conhecimento que aprendemos até esse momento do curso.
 
+<img src="./src/images/app-horizontal.gif"/>
+
 #### Ferramentas utilizadas:
 
 <div style="display: inline_block"><br>
