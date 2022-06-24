@@ -3,7 +3,7 @@
 
 Esse projeto em grupo, envolveu que fosse aplicado todo o conhecimento que aprendemos até esse momento do curso.
 
-<img align="center" src="./src/images/app-horizontal.gif"/>
+<img align="center" height="680" width="400" src="./src/images/app-vertical.gif"/>
 
 ### Ferramentas utilizadas:
 
