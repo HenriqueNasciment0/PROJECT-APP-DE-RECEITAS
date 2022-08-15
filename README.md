@@ -1,9 +1,12 @@
 # Projeto App de Receitas - Conclusão Módulo de Frontend na @trybe. 🙌
-### Olá, eu sou Henrique Nascimento, Programador front-end 👋
+### Olá, eu sou Henrique Nascimento, Programador full stack 👋
 
 Esse projeto em grupo, envolveu que fosse aplicado todo o conhecimento que aprendemos até esse momento do curso.
 
+<details>
+  <summary><strong>👨‍💻 Meu resultado</strong></summary><br />
 <img align="center" height="680" width="360" src="./src/images/app-vertical.gif"/>
+</details>
 
 ### Ferramentas utilizadas:
 
