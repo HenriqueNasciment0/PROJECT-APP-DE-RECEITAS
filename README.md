@@ -42,6 +42,16 @@ Esse projeto em grupo, envolveu que fosse aplicado todo o conhecimento que apren
  ___Para mim, foi o projeto onde pude me cobrar mais, aprender mais, principalmente por simular um ambiente de trabalho, com pessoas diferentes, backgrounds diferentes,
  porém juntos em desenvolver esse projeto! Foi muito empolgante e serviu para validar nossos conhecimentos.___
  
+ ## Clone o repositório:
+ ```
+ git clone git@github.com:HenriqueNasciment0/PROJECT-APP-DE-RECEITAS-REACT.JS-HOOCKS.git
+ ```
+ 
+ ## Instale as dependências:
+ ```
+ npm install
+ ```
+ 
  ## Link do deploy da aplicação 
  ___https://appdereceitas18.netlify.app/___
  
